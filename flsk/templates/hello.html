@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <title>Hello from Flask</title>
+  
+  {% if name %}
+  <h1>эта ваша темпьература равна {{ name }} градусам цельсия!</h1>
+  {% else %}
+  <h1>нет темпьературы!!!!</h1>
+  {% endif %}
+
+  {% for i in tmp %}
+      <h2>{{i}}</h2>
+  {% endfor %}
+
+</body>
+
+</html>
